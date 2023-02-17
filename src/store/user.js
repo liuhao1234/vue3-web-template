@@ -9,5 +9,9 @@ export const useUserStore = defineStore('user', {
     increment() {
       this.count++
     },
+  },
+  persist:{
+    key:"user",
+    storage: sessionStorage
   }
 })

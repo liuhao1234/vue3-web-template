@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia'
-
 export const useHomeStore = defineStore('home', {
   state: () => ({ count: 0 }),
   getters: {
@@ -9,5 +8,6 @@ export const useHomeStore = defineStore('home', {
     increment() {
       this.count++
     },
-  }
+  },
+  persist: true, //默认key是home，默认是localstorage存储
 })
