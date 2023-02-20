@@ -24,12 +24,12 @@ export default defineConfig({
     }),
     AutoImport({
       resolvers: [
-        ElementPlusResolver() //按需导入插件
+        ElementPlusResolver() //按需导入插件,无需全局导入样式
       ],
     }),
     Components({
       resolvers: [
-        ElementPlusResolver() //按需导入插件
+        ElementPlusResolver() //按需导入插件,无需全局导入样式
       ],
     }),
   ],
