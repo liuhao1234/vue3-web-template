@@ -20,13 +20,17 @@ export default defineConfig({
   },
   plugins: [
     vue({
-      reactivityTransform: true, //启用响应式语法糖
+      reactivityTransform: true, //启用响应式语法糖$refs...
     }),
     AutoImport({
-      resolvers: [ElementPlusResolver()],
+      resolvers: [
+        ElementPlusResolver() //按需导入插件
+      ],
     }),
     Components({
-      resolvers: [ElementPlusResolver()],
+      resolvers: [
+        ElementPlusResolver() //按需导入插件
+      ],
     }),
   ],
   resolve: {
