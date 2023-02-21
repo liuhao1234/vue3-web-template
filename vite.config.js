@@ -4,6 +4,7 @@ import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import { viteMockServe } from 'vite-plugin-mock'
 
 // https://vitejs.cn/
 export default defineConfig({
@@ -21,6 +22,12 @@ export default defineConfig({
   plugins: [
     vue({
       reactivityTransform: true, //启用响应式语法糖$refs...
+    }),
+    viteMockServe({
+      // default
+      mockPath: 'mock',
+      supportTs: false,
+      localEnabled: process.env.NODE_ENV === 'development'
     }),
     /**
      * https://github.com/antfu/unplugin-auto-import#install
