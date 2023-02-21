@@ -23,6 +23,10 @@ export default defineConfig({
     vue({
       reactivityTransform: true, //启用响应式语法糖$refs...
     }),
+    /**
+     * https://github.com/vbenjs/vite-plugin-mock/blob/HEAD/README.zh_CN.md
+     * http://mockjs.com/
+     */
     viteMockServe({
       // default
       mockPath: 'mock',

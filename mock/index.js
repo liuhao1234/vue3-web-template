@@ -1,3 +1,6 @@
+/**
+ * http://mockjs.com/
+ */
 export default [
   {
     url: '/api/login',
