@@ -1,4 +1,5 @@
 /**
+ * https://github.com/vbenjs/vite-plugin-mock/blob/HEAD/README.zh_CN.md
  * http://mockjs.com/
  */
 export default [
