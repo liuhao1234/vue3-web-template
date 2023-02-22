@@ -35,7 +35,8 @@ export default defineConfig({
     }),
     /**
      * https://github.com/antfu/unplugin-auto-import#install
-     * 自动导入，组件可直接使用vue、vue-router、pinia库中的ref、computed、useRouter、useStore等方法，无需import方式导入
+     * https://juejin.cn/post/7012446423367024676
+     * 自动导入vue3的hooks，组件可直接使用vue、vue-router、pinia库中的ref、computed、useRouter、useStore等方法，无需import方式导入
      */
     AutoImport({
       imports: [
@@ -49,10 +50,11 @@ export default defineConfig({
     }),
     /**
      * https://github.com/antfu/unplugin-vue-components#installation
+     * https://juejin.cn/post/7012446423367024676
      * 按需自动导入elementui组件,按需自动导入components文件夹下的组件并全局注册
      */
     Components({
-      // dirs: ['src/components'], //自动导入自定义组件
+      // dirs: ['src/components'], //自动导入自定义组件，默认配置是['src/components']
       resolvers: [
         ElementPlusResolver() //按需导入插件,无需全局导入样式
       ],
