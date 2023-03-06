@@ -1,9 +1,10 @@
 {
   "recommendations": [
-    "vue.volar",
-    "vue.vscode-typescript-vue-plugin",
-    "editorconfig.editorconfig",
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    "EditorConfig.EditorConfig",
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "oouo-diogo-perdigao.docthis"
   ]
 }
