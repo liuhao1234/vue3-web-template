@@ -1,9 +1,11 @@
 {
   "editor.tabSize": 2,
+  "eslint.enable": true,
   "files.autoSave": "onFocusChange",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "eslint.validate": ["javascript", "vue"]
+  "eslint.validate": ["javascript", "vue"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
