@@ -1,4 +1,4 @@
-import { defineStore } from 'pinia'
+import { defineStore } from 'pinia';
 
 export const useUserStore = defineStore('user', {
   state: () => ({ count: 0 }),
@@ -7,11 +7,11 @@ export const useUserStore = defineStore('user', {
   },
   actions: {
     increment() {
-      this.count++
+      this.count++;
     },
   },
-  persist:{
-    key:"user",
-    storage: sessionStorage
-  }
-})
+  persist: {
+    key: 'user',
+    storage: sessionStorage,
+  },
+});

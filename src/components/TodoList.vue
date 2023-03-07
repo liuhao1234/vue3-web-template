@@ -1,11 +1,12 @@
 <template>
-  <div v-for="item in 10" :key="item">{{ item }}</div>
+  <div
+    v-for="item in 10"
+    :key="item"
+  >
+    {{ item }}
+  </div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

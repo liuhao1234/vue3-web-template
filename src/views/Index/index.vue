@@ -1,8 +1,16 @@
 <template>
   <div @click="handleIncrement">{{ count }}------{{ double }}</div>
   <TodoList></TodoList>
-  <el-checkbox v-model="checked1" label="Option 1" size="large" />
-  <el-checkbox v-model="checked2" label="Option 2" size="large" />
+  <el-checkbox
+    v-model="checked1"
+    label="Option 1"
+    size="large"
+  />
+  <el-checkbox
+    v-model="checked2"
+    label="Option 2"
+    size="large"
+  />
 </template>
 
 <script setup>
